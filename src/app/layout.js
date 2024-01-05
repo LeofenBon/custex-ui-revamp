@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import TailwindThemeProvider from "./providers/tailwindThemeProvider";
-// import { twMerge } from "tailwind-merge";
+import { twMerge } from "tailwind-merge";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,9 +12,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+
+    // adding suppressHydrationWarning as per next-themes official page
+    // won't block hydration warnings on other elements
+    // link: https://github.com/pacocoursey/next-themes#html--css
+
+    <html lang="en" suppressHydrationWarning> 
       <body className={inter.className}>
-        <TailwindThemeProvider>{children}</TailwindThemeProvider>
+        <TailwindThemeProvider>
+          {children}
+        </TailwindThemeProvider>
       </body>
     </html>
   );
