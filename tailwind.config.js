@@ -12,18 +12,18 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      colors : {
+      colors: {
         primaryDark: "#121212",
         mutedDark: "rgba(255, 255, 255, 0.08)",
         primaryLight: "white",
         // secondaryColor: "",
         // accentColor: ""
-      }
+      },
     },
   },
   plugins: [require("rippleui")],
   darkMode: "class",
   rippleui: {
-		defaultStyle: false,
-	},
+    defaultStyle: false,
+  },
 };
