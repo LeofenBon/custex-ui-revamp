@@ -1,7 +1,7 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import TailwindThemeProvider from './providers/tailwindThemeProvider'
-import { twMerge } from "tailwind-merge";
+// import { twMerge } from "tailwind-merge";
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -15,7 +15,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <TailwindThemeProvider>{children}</TailwindThemeProvider>
+        <TailwindThemeProvider>
+        {children}
+        </TailwindThemeProvider>
       </body>
     </html>
   );
