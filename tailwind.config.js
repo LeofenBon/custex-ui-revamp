@@ -15,6 +15,7 @@ module.exports = {
       colors: {
         primaryDark: "#121212",
         mutedDark: "rgba(255, 255, 255, 0.08)",
+        mutedDarkFont: "rgba(255, 255, 255, 0.5)",
         primaryLight: "white",
         // secondaryColor: "",
         // accentColor: ""
