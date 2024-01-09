@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    overflow: hidden;
+}
+
+.mar-r {
+    margin-right: 8px !important
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+    height: 100%;
+}
+
+*::-webkit-scrollbar-track {
+    opacity: 0;
+    /* transition: opacity 0.5s ease 0s; */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+}
+
+.search-background {
+    background:  rgba(255, 255, 255, 0.12)
+}
